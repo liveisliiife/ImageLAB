@@ -1,6 +1,7 @@
 github: https://github.com/dvschultz/AttnGAN
 paper: https://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf
 
+prompt: a photo of a homemade swirly pasta with broccoli carrots and onions.
 
 """
 Citing AttnGAN
