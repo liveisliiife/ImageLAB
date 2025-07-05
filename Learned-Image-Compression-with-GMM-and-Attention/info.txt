@@ -1,0 +1,16 @@
+CVPR 2020 (IEEE Conference on Computer Vision and Pattern Recognition)
+Learned Image Compression with Discretized Gaussian Mixture Likelihoods and Attention Modules
+paper: https://arxiv.org/abs/2001.01568
+github: https://github.com/ZhengxueCheng/Learned-Image-Compression-with-GMM-and-Attention
+
+
+@inproceedings{cheng2020learned,
+  title={Learned Image Compression with Discretized Gaussian Mixture Likelihoods and Attention Modules},
+  author={Cheng, Zhengxue and Sun, Heming and Takeuchi, Masaru and Katto, Jiro},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2020},
+  pages={7939--7948}
+}
+
+q1,q2,q3,q4 kalite ile ilgili. en kalitelisi q4
+
