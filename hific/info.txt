@@ -1,0 +1,4 @@
+github: https://hific.github.io/
+paper: https://arxiv.org/abs/2006.09965
+
+NeurIPS 2020
