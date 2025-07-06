@@ -1,0 +1,20 @@
+github: https://github.com/rightlit/StackGAN-v2-rev
+orjinal stackgan: https://github.com/hanzhanggit/StackGAN-v2
+paper: https://arxiv.org/abs/1710.10916
+StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks
+
+ TPAMI 2019 
+
+
+https://ieeexplore.ieee.org/document/8411144:
+bibtex
+@ARTICLE{8411144,
+  author={Zhang, Han and Xu, Tao and Li, Hongsheng and Zhang, Shaoting and Wang, Xiaogang and Huang, Xiaolei and Metaxas, Dimitris N.},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={StackGAN++: Realistic Image Synthesis with Stacked Generative Adversarial Networks}, 
+  year={2019},
+  volume={41},
+  number={8},
+  pages={1947-1962},
+  keywords={Gallium nitride;Generators;Image resolution;Training;Image generation;Task analysis;Computational modeling;Generative models;generative adversarial networks (GANs);multi-stage GANs;multi-distribution approximation;photo-realistic image generation;text-to-image synthesis},
+  doi={10.1109/TPAMI.2018.2856256}}
