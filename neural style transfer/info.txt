@@ -1,0 +1,56 @@
+A Neural Algorithm of Artistic Style
+
+paper: https://arxiv.org/abs/1508.06576
+Conference on Computer Vision and Pattern Recognition (CVPR), 2016
+
+bibtex:
+@article{gatys2015neural,
+  title={A neural algorithm of artistic style},
+  author={Gatys, Leon A and Ecker, Alexander S and Bethge, Matthias},
+  journal={arXiv preprint arXiv:1508.06576},
+  year={2015}
+}
+
+semazen ebru output1: 
+num_steps = 300
+style_weight = 1e6
+content_weight = 1
+
+semazen ebru output2: 
+num_steps = 500
+style_weight = 1e6
+content_weight = 100
+
+semazen ebru output3: 
+num_steps = 500
+style_weight = 1000
+content_weight = 1
+
+kedi balık output:
+num_steps = 500
+style_weight = 1e6
+content_weight = 1000
+
+kedi mosaic output 1:
+num_steps = 500
+style_weight = 1e6
+content_weight = 1000
+
+kedi mosaic output 2::
+num_steps = 500
+style_weight = 1000
+content_weight = 10
+
+
+kedi mosaic output 2::
+num_steps = 500
+style_weight = 1000
+content_weight = 1
+
+
+Bu çalışmada içerik görseli olarak Mevlevi semazenlerin yer aldığı bir sahne, stil görseli olarak ise geleneksel Türk ebru sanatı kullanılmış ve 
+Neural Style Transfer algoritması uygulanmıştır. Kullanılan yöntem, Gatys et al. (CVPR 2016) tarafından önerilen, bir içerik görseline başka bir 
+görselin stilini aktarabilen bir optimizasyon tabanlı CNN yaklaşımıdır. Stil ve içerik temsilleri, ImageNet üzerinde eğitilmiş VGG-19 ağı aracılığıyla 
+çıkarılmıştır. Uygulama PyTorch framework’ü kullanılarak gerçekleştirilmiştir.
+
+
