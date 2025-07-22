@@ -1,0 +1,1 @@
+split_th=20, merge_th=18, min_sz=22, kernel_sz=7, sigma=1.6
