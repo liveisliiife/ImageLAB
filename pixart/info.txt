@@ -1,0 +1,86 @@
+(ICLR 2024) PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis
+
+alpha github: https://github.com/PixArt-alpha/PixArt-alpha
+alpha paper:  https://arxiv.org/abs/2310.00426
+delta paper: https://arxiv.org/abs/2401.05252       (PIXART-δ: Fast and Controllable Image Generation with Latent Consistency Models)
+
+resmi ürettiğim yer: https://huggingface.co/spaces/PixArt-alpha/PixArt-LCM
+
+
+PIXART-α modeli, bu makalenin öncülü olup, ICLR 2024'te Spotlight kabulü almıştır 
+
+öncü makele bibtex:
+@article{chen2023pixart,
+  title={Pixart-$$\backslash$alpha $: Fast training of diffusion transformer for photorealistic text-to-image synthesis},
+  author={Chen, Junsong and Yu, Jincheng and Ge, Chongjian and Yao, Lewei and Xie, Enze and Wu, Yue and Wang, Zhongdao and Kwok, James and Luo, Ping and Lu, Huchuan and others},
+  journal={arXiv preprint arXiv:2310.00426},
+  year={2023}
+}
+
+
+
+kullandığımız model bibtex:    hf modeli(LCM) burda
+@article{chen2024pixart,
+  title={Pixart-$\{$$\backslash$delta$\}$: Fast and controllable image generation with latent consistency models},
+  author={Chen, Junsong and Wu, Yue and Luo, Simian and Xie, Enze and Paul, Sayak and Luo, Ping and Zhao, Hang and Li, Zhenguo},
+  journal={arXiv preprint arXiv:2401.05252},
+  year={2024}
+}
+
+
+
+
+
+girilen promptlar:
+
+kedi: "an orange cat is sitting. she has big green eyes."
+
+kız kulesi: "A romantic sunset view of the Maiden's Tower (Kız Kulesi) in Istanbul, surrounded by seagulls, with the city skyline in the background and reflections on the Bosphorus"
+
+galata kulesi: "A historical view of the Galata Tower in Istanbul, with cobblestone streets, old buildings, and street lamps glowing during the evening"
+
+boğaz ve çay: "A peaceful morning by the Bosphorus in Istanbul, a traditional Turkish tea glass on a wooden table, with a view of the bridge and the sea in the background"
+
+kapadokya: "Hot air balloons flying over the fairy chimneys of Cappadocia during sunrise, with soft orange rocks and a dreamy landscape"
+
+pazar ve kilim: "A colorful Anatolian bazaar filled with traditional Turkish carpets and kilims, handwoven rugs hanging on the walls, and merchants selling local goods"
+
+boğaz ve kahve + : "A realistic, high-resolution morning scene by the Bosphorus in Istanbul. In the foreground, on a rustic wooden table, there is a white porcelain Turkish coffee cup with a matching saucer, filled with rich, foamy Turkish coffee. Nothing else is on the table. In the middle distance, a white ferry boat is calmly sailing on the sea, with a few seagulls flying nearby. Further back, the iconic Hagia Sophia (Ayasofya) is clearly visible with its domes and minarets, softly illuminated by the warm morning light. The sea is calm and blue, the sky is clear, and the entire atmosphere feels peaceful and quiet. No people, no clutter — just Istanbul's timeless morning beauty."
+
+boğaz ve kahve - : "blurry, low quality, low resolution, painting, cartoon, sketch, 3d render, extra limbs, deformed objects, bad perspective, watermark, text, logo, overexposed, oversaturated, unrealistic colors, artificial lighting, distortion"
+
+sadece kilim + : "A single, beautifully detailed Anatolian kilim with traditional Hitite (Hittite) patterns, displayed flat and fully visible. The handwoven rug features ancient Anatolian symbols and geometric motifs in rich earthy colors like red, brown, beige, and dark blue. The kilim has a symmetrical design, fine weaving texture, and authentic cultural patterns inspired by Central Anatolia and Hittite heritage. No background distractions, no people, no market — just the kilim laid out on a neutral, simple surface for clear viewing. Soft natural lighting enhances the texture and color richness."
+
+sadece kilim - : "blurry, low quality, distorted, modern patterns, cartoon, 3d, folded, rolled, people, market, cluttered background, text, watermark, abstract, shiny, unrealistic colors"
+
+kilim ve dokuma kadın var + : "Inside a traditional Anatolian weaving workshop, a woman is weaving a beautiful handwoven kilim on a large wooden loom. The kilim in progress features intricate Hittite (Hitite) patterns and ancient Anatolian motifs in earthy tones like red, brown, and dark blue. Only the woman’s hands and part of her traditional clothes are visible, focusing mainly on the weaving process. Several finished kilims and rugs with colorful ethnic designs hang on the stone or wooden walls in the background. The scene is warmly lit with soft natural light, capturing the cultural richness and craftsmanship of traditional Turkish rug making. The atmosphere is authentic, quiet, and respectful of heritage."
+
+kilim ve dokuma kadın var - : "blurry, low quality, cartoon, modern tools, electronic machines, people fully visible, abstract patterns, shiny textures, cluttered background, watermark, text, artificial lighting, western clothes, folded rugs
+
+"
+
+kilim ve dokuma kadın yok + : "A detailed, realistic scene inside a traditional Anatolian weaving workshop. A partially woven handmade kilim with Hittite (Hitite) and Anatolian motifs is on a large wooden weaving loom, surrounded by yarns and weaving tools. The kilim features symmetrical, ancient geometric patterns in rich earthy tones like red, beige, and dark blue. The weaver is not visible, only a subtle presence is implied by the progress of the work. In the background, several colorful finished kilims hang on the stone or wooden walls, adding texture and cultural richness to the scene. The lighting is soft and natural, enhancing the warm colors and woven texture. No human figures, focus is on the traditional craftsmanship."
+
+kilim ve dokuma kadın yok + : "visible people, faces, blurry, cartoon, illustration, modern machines, abstract design, low detail, watermark, text, cluttered, futuristic, neon colors, 3d render, digital art, synthetic textures"
+
+galata kulesi 2 + : "A realistic and warmly lit evening scene featuring the historical Galata Tower in Istanbul. The cobblestone streets below are softly illuminated by a glowing crescent moon in the sky and old-fashioned street lamps lining the path. The scene is peaceful and romantic, with the surrounding Ottoman-era buildings casting gentle shadows. A few cute street cats are resting or wandering quietly in the background, not in the foreground. The atmosphere is calm and slightly magical, with the soft moonlight reflecting off the cobblestones, enhancing the textures and creating a serene ambiance.
+
+"
+
+galata kulesi 2 - : "dark, low visibility, overexposed, blurry, people, cars, cartoon, modern buildings, clutter, distortion, daytime, text, watermark, harsh shadows, oversaturated, exaggerated lighting, animals in foreground"
+
+galata kulesi 3 + : "A realistic, high-resolution evening scene in Istanbul, featuring the historic Galata Tower, a medieval stone tower with a conical roof, rising above old Ottoman-style buildings. The cobblestone streets below are softly illuminated by vintage street lamps and the gentle light of a crescent moon in the sky. Moonlight reflects off the cobblestones, adding texture and depth to the scene. In the distance, a few cute street cats wander or rest quietly in the shadows, adding a touch of life to the peaceful atmosphere. The Galata Tower stands prominently in the background, lit by warm lights that highlight its stone texture and iconic dome. The setting is calm, romantic, and deeply atmospheric — a timeless night in Istanbul."
+
+galata kulesi 3 - : "blurry, dark, cartoon, sketch, 3d, modern buildings, daytime, people, cars, clutter, distortion, abstract, low detail, text, watermark, animals in foreground, low light, exaggerated shadows"
+
+galata kulesi 4 + : "A historical view of the Galata Tower in Istanbul, with cobblestone streets, old buildings, and street lamps glowing during the evening, with soft, warm lighting that clearly illuminates the scene and makes all details visible."
+
+galata kulesi 4 - : "blurry, dark, cartoon, sketch, 3d, modern buildings, daytime, people, cars, clutter, distortion, abstract, low detail, text, watermark, animals in foreground, low light, exaggerated shadows"
+
+kapadokya 2 + : "A photo-realistic aerial view of Cappadocia, Turkey, during sunrise. Dozens of colorful hot air balloons float gently in the sky at different heights. The land below is filled with unique rock formations shaped like tall, cone-shaped towers with flat tops, known as fairy chimneys. These natural structures are clustered in valleys with soft orange and pink tones, formed by centuries of wind erosion. The golden morning light enhances the texture of the rocks and the dreamy atmosphere of the scene. The sky is clear, and the full landscape is visible with a wide, open view."
+
+kapadokya 2/3/4 - : "abstract, cartoon, desert, distorted rocks, modern city, buildings, missing balloons, few balloons, blurry, surreal shapes, trees in foreground, water, fantasy, low detail, overexposed"
+
+kapadokya 3/4 + : "A photo-realistic aerial view of Cappadocia, Turkey, during a golden sunrise. The scene shows dozens of colorful hot air balloons floating peacefully at various heights across the sky. Below them lies the iconic volcanic landscape of Cappadocia, filled with tall, cone-shaped rock formations with flat tops, known as fairy chimneys. These natural rock towers are clustered in valleys with soft orange, beige, and pink hues, shaped by centuries of wind erosion. The land resembles the terrain of the UNESCO World Heritage Site in Göreme. The lighting is soft and warm, casting long morning shadows that highlight the unique textures of the rocks. The atmosphere is serene and magical, with no people or modern buildings in sight, just the pure beauty of nature and culture. The image is wide-angle, crystal clear, and shot in DSLR photography style, 50mm lens, with high detail and sharp focus."
+
+kapadokya 3/4 - : "abstract, cartoon, fantasy, surreal, distorted shapes, desert, modern buildings, city, people, blurry, missing balloons, few balloons, bad lighting, low quality, clutter, trees in foreground, artificial colors, text, watermark, 3d render"
