@@ -1,0 +1,24 @@
+BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation
+
+hf: https://huggingface.co/Salesforce/blip-image-captioning-large
+paper: https://arxiv.org/abs/2201.12086
+
+
+ICML 2022  https://proceedings.mlr.press/v162/li22n.html
+
+
+input - output
+image: Anadolu-Kayaköy40 : arafed man making a clay pot on a wheel in a pottery shop
+image2: Anadolu-KesmeIsparta42 : woman sitting in front of a fire with a pot on it
+image3: Anadolu-Biga44 : there is a man riding a horse with a bow and arrow
+
+
+bibtex:
+@inproceedings{li2022blip,
+  title={Blip: Bootstrapping language-image pre-training for unified vision-language understanding and generation},
+  author={Li, Junnan and Li, Dongxu and Xiong, Caiming and Hoi, Steven},
+  booktitle={International conference on machine learning},
+  pages={12888--12900},
+  year={2022},
+  organization={PMLR}
+}
