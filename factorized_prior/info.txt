@@ -1,0 +1,58 @@
+Variational image compression with a scale hyperprior
+ICLR 2018
+paper: https://arxiv.org/abs/1802.01436
+github ??? : https://github.com/tensorflow/compression
+
+
+
+bibtex:
+@article{balle2018variational,
+  title={Variational image compression with a scale hyperprior},
+  author={Ball{\'e}, Johannes and Minnen, David and Singh, Saurabh and Hwang, Sung Jin and Johnston, Nick},
+  journal={arXiv preprint arXiv:1802.01436},
+  year={2018}
+}
+
+
+
+
+her bir resim için 16 tane çıktı alıyoruz. 2 farklı model grubu var. 1 kötü , 4 orta, 8 iyi.
+
+
+Model Grubu	Model Adı Örneği	         1 (En Az)	                                4 (Orta)	                                                8 (En Çok)
+MSE-opt.	bmshj2018-factorized-mse-i	Aşırı bloklanma, bulanıklık	                Blok-artifaktlar hâlâ belirgin, kenarlar keskinleşiyor	        Neredeyse orijinalle birebir, çok hafif yumuşama
+MS-SSIM-opt.	bmshj2018-factorized-msssim-i	Farklı tondaki renk kaymaları, yapay yumuşatma	Doku korunumu daha iyi, yine de renk doygunluğunda sapmalar	Görsel olarak en inandırıcı, kenar ve detaylar çok iyi korunmuş
+
+
+
+1–8 arası MSE-optimize varyantları (-mse-1 … -mse-8)
+mse-1: En düşük bpp, MSE minimizasyonu sebebiyle büyük bloklanmalar ve homojen bölgelerde aşırı pürüzsüzleşme (blur).
+
+mse-4: Orta düzeyde blok artifaktı; düşük-orta frekans detaylar hâlâ bulanık, ancak yüksek frekans (kenarlar) nispeten koruyor.
+
+mse-8: Yüksek bpp; neredeyse özgün piksel değerlerine yakın, sadece çok zayıf yumuşatma ve minör kuantalama hataları var.
+
+
+
+1–8 arası MS-SSIM-optimize varyantları (-msssim-1 … -msssim-8)
+msssim-1: Algısal kaliteye odaklı en agresif sıkıştırma; blok yerine daha “pürüzsüz” ve yapay renk geçişleri görülür, kenarların keskinliği korunmaz.
+
+msssim-4: Orta seviye; doku ve perde detayları MSE grubuna göre çok daha iyi korunuyor, fakat renk tonu ve kontrastta yapaylık hissi var.
+
+msssim-8: En yüksek kalite; hem kenar hem de doku ayrıntıları orijinal görünümüne oldukça yakın, insan gözüyle ayırt edilebilecek ince sapmalar var ama tatmin edici.
+
+
+
+
+
+Nasıl yorumlayabilirsiniz?
+
+MSE grubu, “sayısal piksel farkını” (L2) en aza indirmeye çalıştığı için blok-artifaktları ve bulanıklığı öne çıkarır; dolayısıyla kayıplı sıkıştırmanın izlenmesi daha doğrudan olabilir.
+
+MS-SSIM grubu, “algısal benzerliği” optimize ettiği için daha estetik, “iyi görünen” sonuçlar üretir; ama bu da artefaktların farklı şekillerde gizlenmesine yol açar.
+
+Makalenize eklerken görselleri bu iki kritere göre yan yana dizip üstlerine “mse-1…8” ve “msssim-1…8” etiketlerini koyarak okuyucuya hem sayısal hem de görsel kalite evrimini açıkça gösterebilirsiniz.
+
+
+
+
