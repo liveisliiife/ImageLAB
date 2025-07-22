@@ -1,0 +1,20 @@
+GIT: A Generative Image-to-text Transformer for Vision and Language
+
+Transactions on Machine Learning Research (TMLR) 2022
+
+hf: https://huggingface.co/microsoft/git-large-coco
+paper: https://arxiv.org/abs/2205.14100
+
+input-output
+image: Anadolu-Kayaköy40 : a man is making a clay pot
+image2: Anadolu-KesmeIsparta42 : a woman cooking bread in a stove
+image3: Anadolu-Biga44 : a man riding a horse with a bow and arrow.
+
+
+bibtex:
+@article{wang2022git,
+  title={Git: A generative image-to-text transformer for vision and language},
+  author={Wang, Jianfeng and Yang, Zhengyuan and Hu, Xiaowei and Li, Linjie and Lin, Kevin and Gan, Zhe and Liu, Zicheng and Liu, Ce and Wang, Lijuan},
+  journal={arXiv preprint arXiv:2205.14100},
+  year={2022}
+}
